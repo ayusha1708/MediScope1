@@ -1,0 +1,893 @@
+{
+  "dataset": "manually authored diverse routing regression set",
+  "examples": 80,
+  "labels": [
+    "SAFETY",
+    "KNOWLEDGE_RAG",
+    "LITERATURE_CONTEXT",
+    "GENERAL_INFORMATION"
+  ],
+  "accuracy": 0.9625,
+  "classification_report": {
+    "SAFETY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 20.0
+    },
+    "KNOWLEDGE_RAG": {
+      "precision": 0.9354838709677419,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.9508196721311475,
+      "support": 30.0
+    },
+    "LITERATURE_CONTEXT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "GENERAL_INFORMATION": {
+      "precision": 0.9285714285714286,
+      "recall": 0.8666666666666667,
+      "f1-score": 0.896551724137931,
+      "support": 15.0
+    },
+    "accuracy": 0.9625,
+    "macro avg": {
+      "precision": 0.9660138248847927,
+      "recall": 0.9583333333333334,
+      "f1-score": 0.9618428490672696,
+      "support": 80.0
+    },
+    "weighted avg": {
+      "precision": 0.962413594470046,
+      "recall": 0.9625,
+      "f1-score": 0.9621608253250423,
+      "support": 80.0
+    }
+  },
+  "confusion_matrix_labels": [
+    "SAFETY",
+    "KNOWLEDGE_RAG",
+    "LITERATURE_CONTEXT",
+    "GENERAL_INFORMATION"
+  ],
+  "confusion_matrix_rows_true_columns_predicted": [
+    [
+      20,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      29,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      13
+    ]
+  ],
+  "safety_recall": 1.0,
+  "emergency_false_negatives": [],
+  "exact_query_leakage": {
+    "manual_queries_in_train_or_test": 0,
+    "checked_against": [
+      "/home/ubuntu/MediScope-main/MediScope-main/data/query_train.csv",
+      "/home/ubuntu/MediScope-main/MediScope-main/data/query_test.csv"
+    ]
+  },
+  "cases": [
+    {
+      "question": "I can't breathe",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I cannot breathe right now",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I cant breath",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I am having difficulty breathing",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "My breathing is very difficult",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I am struggling to breathe",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I am gasping for air",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I feel like I am suffocating",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "Someone is having trouble breathing",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "My chest hurts and I am short of breath",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I am not getting enough air",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I can't catch my breath",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I am breathng very badly",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I have severe breathing problems right now",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "What should I do if I can't breathe right now?",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I am unconscious and someone needs help",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "My friend is not breathing",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I have severe bleeding right now",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "Someone may have overdosed",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "I think this may be a stroke and it is happening now",
+      "expected": "SAFETY",
+      "predicted": "SAFETY",
+      "model_route": "SAFETY",
+      "confidence": 1.0,
+      "confidence_margin": 1.0,
+      "reason": "safety_screen_matched",
+      "correct": true
+    },
+    {
+      "question": "What are symptoms of difficulty breathing?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.8469733948824157,
+      "confidence_margin": 0.7215013109752282,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What serious signs are associated with respiratory distress?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.9665156688407631,
+      "confidence_margin": 0.9460864345570623,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "How does shortness of breath happen in asthma?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.5602802104860704,
+      "confidence_margin": 0.272177395763769,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "Explain why someone may feel breathless during exercise.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.3972574757689518,
+      "confidence_margin": 0.07109472236036052,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": true
+    },
+    {
+      "question": "What are the causes of gasping for air?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.7498859802077871,
+      "confidence_margin": 0.5795851273283322,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What are some serious symptoms associated with type 2 diabetes?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.9017388439282393,
+      "confidence_margin": 0.8469498879214934,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What signs are commonly associated with anemia?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.9898569951069291,
+      "confidence_margin": 0.9843812262966724,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What causes persistent headaches?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.40496856677031723,
+      "confidence_margin": 0.062310299056817064,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What complications can untreated hypertension cause?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.49574589660073987,
+      "confidence_margin": 0.1633551238470436,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What are the risk factors for kidney disease?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.7707385048194226,
+      "confidence_margin": 0.575675638577271,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "How is asthma severity classified?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.571817049427811,
+      "confidence_margin": 0.31738863151035906,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What screening is recommended for colorectal cancer?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.37546914244845303,
+      "confidence_margin": 0.05143099306380339,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What treatment guidance exists for iron deficiency?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.5096098506214426,
+      "confidence_margin": 0.26038489660863373,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "How does inflammation affect blood vessels?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.7967416306677532,
+      "confidence_margin": 0.6372235384490057,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What are warning signs of dehydration?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.8772824172938937,
+      "confidence_margin": 0.7938509452108229,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "Can poor sleep affect blood pressure?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.6934200933404215,
+      "confidence_margin": 0.49912618902026057,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What is the mechanism behind insulin resistance?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.573449848194351,
+      "confidence_margin": 0.23037666568780168,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "Give a source-supported explanation of vaccine safety.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.8639797532588099,
+      "confidence_margin": 0.7706971307543018,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "What medical guidance explains migraine triggers?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.9484629956580816,
+      "confidence_margin": 0.9210753227002907,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What stages are used to describe chronic kidney disease?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.49186782152800007,
+      "confidence_margin": 0.05223599606205487,
+      "reason": "medical_detail_requires_evidence_retrieval",
+      "correct": true
+    },
+    {
+      "question": "Could you define inflammation for a beginner?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.9748885387036502,
+      "confidence_margin": 0.9586436683669378,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Define a chromosome in simple terms.",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.9945026376704471,
+      "confidence_margin": 0.9917223069293772,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Define metabolism in simple terms.",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.9940298536600101,
+      "confidence_margin": 0.9898857163290314,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "What does prognosis mean in medical language?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.777173860784283,
+      "confidence_margin": 0.6102328628572894,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Explain what a vaccine is in plain language.",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.8214033480866447,
+      "confidence_margin": 0.7089897296503134,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What does MRI stand for?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.7243708693540226,
+      "confidence_margin": 0.5834622376930918,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What is the immune system?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.75,
+      "confidence_margin": 0.29123725218400504,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Explain the difference between bacteria and viruses simply.",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.5221218360149564,
+      "confidence_margin": 0.2453103235830768,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": false
+    },
+    {
+      "question": "What does benign mean?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.8230948790601175,
+      "confidence_margin": 0.7152933884096236,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "What is a red blood cell?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.75,
+      "confidence_margin": 0.4844161802329789,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Define the term antibody.",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.4585674574381929,
+      "confidence_margin": 0.1681106971738966,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": false
+    },
+    {
+      "question": "What does the abbreviation ECG stand for?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.75,
+      "confidence_margin": 0.525005763608812,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Explain metabolism for a beginner.",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.8997651910339065,
+      "confidence_margin": 0.8278161129116322,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What is DNA?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.8892857159213604,
+      "confidence_margin": 0.8089261140837594,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "What does the word symptom mean?",
+      "expected": "GENERAL_INFORMATION",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.7647548711391979,
+      "confidence_margin": 0.6326785510691303,
+      "reason": "explicit_low_risk_definition_request",
+      "correct": true
+    },
+    {
+      "question": "Compare the findings of two diabetes studies.",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9680890714760314,
+      "confidence_margin": 0.9501930483722028,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Which research papers examine sleep and blood pressure?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9,
+      "confidence_margin": 0.6663358723879033,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "What were the methods used in the asthma trial?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9,
+      "confidence_margin": 0.42959270832994223,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Summarize published trials on asthma treatments.",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9,
+      "confidence_margin": 0.8482072910617791,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "What limitations did the systematic review report?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9675359852554897,
+      "confidence_margin": 0.950221958602211,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "How do the conclusions of these two papers differ?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.790504720296238,
+      "confidence_margin": 0.6697970306761091,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What was the sample size in the study?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9,
+      "confidence_margin": 0.3372674793538085,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Does the medical literature agree about vitamin D?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9,
+      "confidence_margin": 0.0852465582092079,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Find studies reporting results about diabetes prevention.",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9558233908023029,
+      "confidence_margin": 0.9282859972676807,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Compare the research methods used by the trials.",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9870584221743954,
+      "confidence_margin": 0.9794607640618997,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "What did the published review find?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.8846774811060867,
+      "confidence_margin": 0.8128498555912224,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "Summarize the limitations of the research papers.",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9321654311117896,
+      "confidence_margin": 0.8887381691539796,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Which clinical trials investigated this treatment?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9083362118124759,
+      "confidence_margin": 0.843219953296078,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "What outcomes did the study report?",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9882497406915072,
+      "confidence_margin": 0.982227418313885,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Review the evidence across published studies.",
+      "expected": "LITERATURE_CONTEXT",
+      "predicted": "LITERATURE_CONTEXT",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.9622927612073788,
+      "confidence_margin": 0.9377846889969882,
+      "reason": "explicit_research_or_study_request",
+      "correct": true
+    },
+    {
+      "question": "Tell me about blood pressure.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.7304630186348847,
+      "confidence_margin": 0.5759093002317828,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "Can you discuss diabetes?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "GENERAL_INFORMATION",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.8041626888796489,
+      "confidence_margin": 0.6477427855910944,
+      "reason": "trained_model",
+      "correct": false
+    },
+    {
+      "question": "I need information about anemia.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.4990492508796715,
+      "confidence_margin": 0.1319723476267925,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": true
+    },
+    {
+      "question": "Please explain this health condition.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "GENERAL_INFORMATION",
+      "confidence": 0.3752331955380123,
+      "confidence_margin": 0.056075220051566343,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": true
+    },
+    {
+      "question": "What should a learner know about this medical topic?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.9964566299044423,
+      "confidence_margin": 0.9946072804054069,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "Can you give me medical background on asthma?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.9186133136211859,
+      "confidence_margin": 0.8559797544538823,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "Tell me about the effects of poor sleep.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.5754811909343142,
+      "confidence_margin": 0.22259147682979546,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "I want evidence about a health topic.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.5407030842598494,
+      "confidence_margin": 0.13081180371958817,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": true
+    },
+    {
+      "question": "Explain this condition medically.",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "KNOWLEDGE_RAG",
+      "confidence": 0.6798146651986862,
+      "confidence_margin": 0.4171821226435029,
+      "reason": "trained_model",
+      "correct": true
+    },
+    {
+      "question": "What does the evidence say about this condition?",
+      "expected": "KNOWLEDGE_RAG",
+      "predicted": "KNOWLEDGE_RAG",
+      "model_route": "LITERATURE_CONTEXT",
+      "confidence": 0.49151633479767454,
+      "confidence_margin": 0.10041045677814231,
+      "reason": "low_confidence_safe_evidence_fallback",
+      "correct": true
+    }
+  ]
+}
